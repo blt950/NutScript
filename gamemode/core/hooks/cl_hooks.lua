@@ -116,6 +116,13 @@ function GM:LoadNutFonts(font, genericFont)
 		weight = 500
 	})
 
+	surface.CreateFont("nutChatFontBig", {
+		font = font,
+		size = math.max(ScreenScale(8), 18),
+		extended = true,
+		weight = 200
+	})
+
 	surface.CreateFont("nutChatFont", {
 		font = font,
 		size = math.max(ScreenScale(7), 17),

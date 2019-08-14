@@ -247,6 +247,7 @@ do
 		-- Yelling out loud.
 		nut.chat.register("y", {
 			format = "%s yells \"%s\"",
+			font = "nutChatFontBig",
 			onGetColor = function(speaker, text)
 				local color = nut.chat.classes.ic.onGetColor(speaker, text)
 
