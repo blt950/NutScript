@@ -10,6 +10,7 @@ hidden["CHudBattery"] = true
 hidden["CHudAmmo"] = true
 hidden["CHudSecondaryAmmo"] = true
 hidden["CHudHistoryResource"] = true
+hidden["CHUDQuickInfo"] = true
 
 local nextUpdate = 0
 local lastTrace = {}
