@@ -145,8 +145,8 @@ local PANEL = {}
 		end
 
 		if (self.model) then
-			self.model:SetModel(LocalPlayer():GetModel())
-			self.model.Entity:SetSkin(LocalPlayer():GetSkin())
+			self.model:SetModel(char:getModel())
+			self.model.Entity:SetSkin(char:getSkin())
 
 			for k, v in ipairs(LocalPlayer():GetBodyGroups()) do
 				self.model.Entity:SetBodygroup(v.id, LocalPlayer():GetBodygroup(v.id))

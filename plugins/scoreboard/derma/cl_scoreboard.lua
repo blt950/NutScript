@@ -120,7 +120,7 @@ local PANEL = {}
 		client.nutScoreSlot = slot
 
 		slot.model = slot:Add("nutSpawnIcon")
-		slot.model:SetModel(client:GetModel(), client:GetSkin())
+		slot.model:SetModel(slot.character:getModel(), slot.character:getSkin())
 		slot.model:SetSize(64, 64)
 		slot.model.DoClick = function()
 			local menu = DermaMenu()
@@ -235,7 +235,7 @@ local PANEL = {}
 			end
 
 			if (self.lastModel != model or self.lastSkin != skin) then
-				self.model:SetModel(client:GetModel(), client:GetSkin())
+				self.model:SetModel(slot.character:getModel(), slot.character:getSkin())
 				self.model:SetTooltip(L("sbOptions", client:steamName()))
 				
 				self.lastModel = model
